@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap-grid.css">
+    <script src="https://kit.fontawesome.com/8ac85c2cfe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.mma{
+        width: 100%;
+        height: 88vh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-around;
+}
+.drew{
+    width: 27%;
+    height: 85vh;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    left: 0;
+}
+.drew img{
+    width: 45%;
+    padding: 15px;
+}
+.drev{
+    width: 75%;
+    height: 88vh;
+    background-color: rgb(36, 33, 33);
+    overflow-y: scroll;
+}
+.drev::-webkit-scrollbar{
+    width: 1%;
+    height: 1%;
+}
+.hop{
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.hop a{
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+.hop .dif{
+    color: white;
+}
+.hip{
+    /* background-color: yellow; */
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.hip a{
+    color: rgba(255, 255, 255, 0.404);
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none; 
+}
+.btn{
+    padding: 5px;
+    background: linear-gradient(to top, skyblue, blue, darkblue);
+    border: none;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+.hop a:hover{
+    color: white;
+}
+.hip a:hover{
+    color: white;
+}
+.hup{
+    /* background-color: green; */
+    margin-top: 7%;
+    padding: 15px;
+    line-height: 30px;
+    justify-content: space-evenly;
+    height: 30%;
+    
+}
+.hup a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.404);
+    font-size: 14px;
+    justify-content: space-between;
+    font-weight: lighter;
+}
+.hup .cook:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+.but{
+    background-color: transparent;
+    border: .2px solid white;
+    /* width: 30%; */
+    margin-top: 20px;
+    padding: 7px 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+.but a{
+    font-weight: bolder;
+    color: white;
+}
+.but:hover{
+    transform: scale(1.1);
+}
+.drek{
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    line-height: 22px;
+    background: linear-gradient(to right, rgb(174,40,150), rgb(132,93,194), rgb(106,124,219), rgb(81,155,245))
+}
+.drek1{
+    width: 50%;
+    height: 12vh;
+    /* background-color: rebeccapurple; */
+}
+.drek1 p{
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+.drek1 b{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+.drek2{
+    width: 40%;
+    height: 8vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: right;
+}
+.drek2 button{
+    /* width: 60%; */
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+.drek2 button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}   
+.bar{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(16, 16, 16);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+}
+.bar img{
+    width: 10%;
+    height: 7vh;
+    padding: 9px;
+    cursor: not-allowed;
+}
+.navL{
+    margin: auto;
+    margin-left: 26%;
+    width: 30%;
+    /* background-color: red; */
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+}
+.navL a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 17px;
+    color: rgba(97, 95, 95, 0.712);
+
+}
+.bra{
+    width: 25%;
+    /* background-color: darkblue; */
+    height: 9vh;
+    /* padding: 20px; */
+    color: white;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.bra a{
+    text-decoration: none;
+    color: rgba(97, 95, 95, 0.712) ;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.bst{
+    padding: 10px 19px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    margin-top: -10px;
+    color: rgb(0, 0, 0) ;
+    font-weight: bolder;
+    font-size: 15px;
+    white-space: nowrap;
+}
+.frt{
+    /* background-color: firebrick; */
+    width: 60%;
+}
+.navL p{
+    font-size: 30px;
+    color: white;
+    margin-top: -10px;
+}
+.navL a:hover{
+    color: white;
+    transform: scale(1.1);
+}
+.bra a:hover{
+    color: white;
+    transform: scale(1.1);
+}
+.bra button:hover{
+    background-color: rgb(211, 208, 208);
+    cursor: pointer;
+    /* transform: scale(1.1); */
+}
+.ma1{
+    width: 95%;
+    margin: auto;
+    height: 5vh;
+    /* background-color: firebrick; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+}
+.ma1 b{
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ared{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(148, 146, 146);
+    padding: 7px;
+}
+.ared:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+.song{
+    width: 100%;
+    height: 100vh;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.song1{
+    width: 18%;
+    height: 45vh;
+    background-color: rgba(220, 220, 220, 0.034);
+    margin-top: 15px;
+    border-radius: 8px;
+}
+.song1 img{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 9%;
+    /* height: 25vh; */
+    border-radius: 6%;
+}
+
+.song1 b{
+    color: white;
+    padding-top: -0%;
+    font-weight: 550;
+    font-size: 17px;
+    margin-left: 9%;
+
+}
+.song1 p{
+    margin-top: 3px;
+    color: rgba(129, 127, 127, 0.671);
+    font-size: 15px;
+    margin-left: 9%;
+}
+.visi{
+    background-color: green;
+    width: 20px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    margin-top: -23%;
+    margin-left: 65%;
+  visibility: hidden;
+}
+.song1:hover .visi{
+    visibility: visible;
+}
+.song1:hover{
+    background-color: rgba(220, 220, 220, 0.11);
+}
+
+.ma2{
+    width: 95%;
+    margin: auto;
+    height: 5vh;
+    /* background-color: firebrick; */
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: -0%;
+}
+.ma2 b{
+    margin-left: -0%;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cover{
+    width: 87%;
+    height: 48vh;
+    /* background-color: rebeccapurple; */
+    border-bottom: 1px solid gray;
+    padding: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fifty{
+    width: 74%;
+    /* background-color: green; */
+    margin-left: -4%;
+    height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 6%;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.ma2 b:hover{
+    text-decoration: underline;
+}
+.ma1 b:hover{
+    text-decoration: underline;
+}
+.sisty{
+    width: 19%;
+    /* background-color: green; */
+    height: 12vh;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pet{
+    padding: 8px;
+    height: 25%;
+    border-radius: 50px;
+    background-color: rgba(220, 220, 220, 0.137);
+}
+.pet:hover{
+    background-color: rgba(220, 220, 220, 0.589);
+    cursor: pointer;
+}
+
+
+.fifk{
+    width: 30%;
+    height: 35vh;
+    display: flex;
+    text-align: left;
+    line-height: 30px;
+      flex-direction: column;
+    /* background-color: navy; */
+}
+.fifk a{
+    text-decoration: none;
+    color: rgba(189, 182, 182, 0.466);
+    font-size: 18px;
+}
+.fifk a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.fifk b{
+    font-size: 18px;
+    margin-left: -0%;
+    color: white;
+}
+.topp{
+    /* background-color: firebrick; */
+    width: 50%;
+    height: 20vh;
+    padding: 5%;
+    margin-right: 70%;
+    /* margin-top: 5%; */
+}
+.topp p{
+    color: rgba(189, 182, 182, 0.466);
+    font-size: 17px;
+}
+
+
+@media screen and (max-width:1220px) {
+    .gop{
+        display: none;
+    }
+    .song1{
+        width: 23%;
+    }
+    .navL{
+        display: none;
+    }
+    
+    .bra{
+        /* background-color: saddlebrown; */
+        /* margin-left: 25%;         */
+        width: 60%;
+        gap: 30%;
+
+    }
+}
+@media  (max-width:1025px) {
+    .keg{
+        display: none;
+    }
+    .song1{
+        width: 31%;
+    }    
+}
+@media (max-width:670px) {
+    .mary{
+        display: none;
+    }
+    .song1{
+        width: 47%;
+    }
+    .ma1 b{
+        font-size: 23px;
+    }
+    .ma2 b{
+        font-size: 23px;
+    }
+    .hup a{font-size: 10px;}
+    .hup{margin-top: 0;}
+    
+}
+@media (max-width:670px) {
+    .fifk a{
+        font-size: 13px;
+    }
+    .fifk b{
+        font-size: 13px;
+    }
+    .fifty{width: 83%;}
+    .png{display: none;}
+    .bra{width: 100%; gap: 15%;}
+    .drew img{width: 75%;}
+}
+@media (max-width:500px) {
+    .hop a{font-size: 10px;}
+    .con{font-size: small;}
+    .hip a{
+        font-size: 10px;
+    }
+   
+    .hup{display: none;}
+}
+@media (max-width:380px) {
+    .song1{
+        height: 38vh;
+        margin-top: 5%;
+    }
+    .daw{display: none;}
+    
+}
+</style>
+<body>
+    <main class="mma">
+        <div class="drew">
+            <img src="Spotify_Logo_RGB_White.png" alt="">
+
+            <div class="hop">
+                <a  class="dif" href=""><i class="icofont-home con" style="font-size: 22px;"></i>
+                    &nbsp; Home</a>
+                <a href=""><i class="icofont-search-1 con" style="font-size: 20px;"></i>
+                    &nbsp; Search</a>
+                <a href=""><i class="icofont-library con" style="font-size: 20px;"></i>
+                    &nbsp; Your Library   </a>
+            </div>
+
+            <div class="hip">
+                <a href=""> <i class="icofont-plus-square"  style="font-size: 20px;"></i>
+                    &nbsp; Create Playlist</a>
+                <a href=""> <button class="btn"><i class="icofont-heart-alt" style="color: whitesmoke;"></i></button>
+                    &nbsp;  Liked Songs</a>
+            </div>
+
+            <div class="hup">
+                <a href="">Legal</a>  &nbsp;
+                <a href="">Privacy Center</a>  &nbsp;
+                <a href="">Privacy Policy</a>  &nbsp;
+                <a href="">Cookies</a> <br>  
+                <a href="">About Ads</a>  &nbsp;
+                <a href="">Accessibility</a> <br>
+                <a href="" class="cook">Cookies</a> <br>
+            </div>
+            <div class="daw" style="margin-top: -20%;"><button class="but">
+                <a style="text-decoration: none;" href=""><i class="icofont-world" style="color: white;"></i> English</a>
+             </button></div>
+        </div>
+      <div class="drev">
+        <nav class="bar">
+            <img class="png" src="black.png" alt="">
+            <div class="navL">
+                <a href="">Premium</a>  &nbsp; 
+                <a href="">Support</a>  &nbsp; 
+                <a href="">Download</a>     &nbsp;&nbsp;
+                <p>|</p>
+            </div>
+            <div class="bra">
+                <a href="sign up.html" target="_blank"><button class="bst" style="background-color: transparent; color: white;">Sign up</button></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                 <a class="frt" href="login.html" target="_blank"> 
+                    <button class="bst" >   Log in </button> 
+                </a> 
+            </div>
+        </nav>
+        <div class="ma1">
+           <b>Focus</b>
+          <a class="ared" href="">Show all</a>
+        </div>
+
+        <div class="song">
+            <div class="song1">
+                <img src="1990.jpg" alt="">
+                <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+                <b>Peaceful R&B</b>
+                <p>Peaceful r&b to help you <br>
+                slow down, breathe and...</p> 
+            </div>
+            <div class="song1">
+                <img src="Bobby_Brown.jpg" alt="">
+                <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+                <b>Deep Focus</b>
+                <p>Keep calm and focus with <br>
+                ambinet and post rock...</p>
+            </div>
+            <div class="song1 mary">
+                <img src="DAngelo-Brown-Sugar-56a7d2413df78cf772999c75.jpeg" alt="">
+                <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+                <b>Instrumental Flow</b>
+                <p>Focus with soft study <br>
+                music in the background...</p>
+            </div>
+            <div class="song1 keg" >
+                <img src="download.jpg" alt="">
+                <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+                <b>Rock and roll</b>
+                <p>Listen to hard rock music <br>
+                along with your friends...</p>
+            </div>
+            <div class="song1 gop" >
+                <img src="33_wac.jpg" alt="">
+                <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+                <b> Workday Lounge</b>
+                <p>Lounge and chill with <br>
+                for your workday alone.</p>
+            </div>
+        
+            
+        <div class="ma2">
+            <b>Spotify playlist</b>
+           <a class="ared" href="">Show all</a>
+         </div>
+         <div class="song1">
+            <img src="DUA_LIPA_FUTURE_NOSTALGIA_ALBUM.webp" alt="">
+              <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+              <b>Today's top hits</b>
+              <p>Dua Lipa is on top of the <br>
+            hottest 50 Today </p>
+         </div>
+         <div class="song1"> <img src="264x264.jpg" alt="">
+              <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+              <b>All out of 2010s</b>
+              <p>The biggest hits of the <br>
+            2010s years </p>
+        </div>
+         <div class="song1 mary">
+             <img src="ade.jpg" alt="">
+              <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+              <b>Nigeria's top albulms</b>
+              <p>Listen all Nigeria music <br>
+            albulmsfor free today </p>
+         </div>
+         <div class="song1 keg">
+             <img src="images.jpg" alt="">
+              <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+              <b>Today's Hip-hop</b>
+              <p>Roddy ricch made it to the <br>
+            hottest hip-hop Today </p>
+         </div>
+         <div class="song1 gop">
+             <img src="Fireboy-DML-Playboy-Album-artwork.jpg" alt="">
+              <button class="visi"> <i class="icofont-ui-play" style="font-size: 20px;"></i></button>
+              <b>Best of youngsters</b>
+              <p>Nigerian singer FireboyDml got <br>
+            hottest youngsters albulms </p>
+         </div>
+
+         <div class="cover">
+          
+         <div class="fifty">
+
+            <div class="fifk">
+                <b>Company</b>
+                <a href="">About</a>
+                <a href="jobs.html" target="_blank">Jobs</a>
+                <a href="">For the record</a>
+            </div>
+            <div class="fifk">
+                <b>Communities</b>
+                <a href="">For Artists</a>
+                <a href="">Developers</a>
+                <a href="">Advertising</a>
+                <a href="investors.html" target="_blank">Investors</a>
+                <a href="">Vendors</a>
+                <a href="">Spotify for work</a>
+            </div>
+         <div class="fifk">
+                <b>Useful Links</b>
+                <a href="">Support</a>
+                <a href="">Free Mobile App</a>
+            </div>
+           
+        </div>
+        <div class="sisty">
+            <div class="pet">
+                <i class="icofont-instagram" style="color: white; font-size: 20px;"></i>
+            </div>
+            <div class="pet">
+                <i class="icofont-facebook" style="color: white; font-size: 20px;"></i>
+            </div>
+            <div class="pet">
+                <i class="icofont-twitter" style="color: white; font-size: 20px;"></i>
+            </div>
+        </div> 
+      
+    </div>  
+    <div class="topp">
+        <p>© 2023 Spotify AB</p>
+    </div>
+
+        </div>
+                
+        
+      </div>
+    
+    </main>
+
+    <div class="drek">
+        <div class="drek1">
+            <p>PREVIEW OF SPOTIFY</p>
+            <b>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</b>
+        </div>
+        <div class="drek2"> <button>
+            Sign up free
+        </button></div>
+            
+    </div>
+</body>
+<script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</html>

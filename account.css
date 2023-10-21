@@ -1,0 +1,627 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.all{
+    width: 100%;
+    height: 353vh;
+    background-color: rgb(31,42,58);
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+}
+.spot{
+    width: 83%;
+    height: 14vh;
+    margin: auto;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: firebrick; */
+}
+.spot1{
+    width: 20%;
+    /* background-color: rgb(17, 17, 17); */
+    height: 10vh;
+}
+.spot1 img{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.spot2{
+    width: 46%;
+    align-items: center;
+    height: 10vh;
+    /* background-color: rgb(146, 137, 137); */
+    display: flex;
+    justify-content: space-evenly;
+}
+.spot2 p{
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+}
+.spot2 p:hover{
+    color: green;
+    cursor: pointer;
+}
+.all2{
+    width: 87%;
+    height: fit-content;
+    background-color: rgb(255,205,210);
+    margin: auto;
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.prof{
+    /* background-color: cadetblue; */
+    position: relative;
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-around;
+}
+.prof button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.prof img{
+    width: 30%;
+    border-radius: 50%;
+}
+.drop{
+    width: 100%;
+    height: 14vh;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    padding: 7%;
+    position: absolute;
+    line-height: 5vh;
+    top: 80px;
+    display: none;
+} 
+.drop .pp{
+    color: black;
+    font-size: 22px;
+}
+.drop .pp:hover{
+    color: green;
+}
+.prof:focus-within .drop{
+    display: block;
+}
+.dis img{
+    width: 46%;
+    border-radius: 50%;
+}
+.dis button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+}
+.diskid{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 10px;
+    top: -900%;
+    transition: .5s ease-in;
+    padding: 25px;
+    line-height: 7vh;
+
+}
+.diskid h2{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+}
+.diskid h4{
+    font-size: 35px;
+    color: white;
+    font-weight: normal;
+}
+.diskid img{
+    margin-top: 55%;
+    width: 40%;
+}
+.dis{
+    display: none;
+    width: 10%;
+}
+.dis:focus-within .diskid{
+    top: 10%;
+}
+@media screen and (max-width: 1330px)  {
+    .spot2{
+        display: none;
+    }
+    .dis{
+        display: block;
+        /* background-color: yellowgreen; */
+        display: flex;
+        width: 20%;
+        height: 70%;
+        margin-right: 5%;
+    }    
+    
+}
+
+.pink{
+    width: 50%;
+    height: fit-content;
+    line-height: 5vh;
+    /* background-color: rgb(49, 49, 32); */
+}
+.pink2{
+    width: 40%;
+    height: 50vh;
+    /* background-color: firebrick; */
+}
+.pink2 img{
+    width: 95%;
+    height: 90%;
+    border-radius: 70px;
+}
+.pink h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    font-weight: bolder;
+    color: black;
+}
+.pink b{
+    font-size: 27px;
+    font-weight: 500;
+}
+.pps{
+    color: black;
+    padding-top: 10px;
+}
+
+.pink button{
+    padding: 21px 65px;
+    margin-top: 3%;
+    /* background-color: wheat; */
+    border-radius: 50px;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+.pink button:hover{
+    transform: scale(1.1);
+}
+@media (max-width:1000px) {
+    .all2{display: block; width: 97%; margin: auto;}
+    .pink{width: 100%;}
+    .pink2{width: 100%;}
+    
+}
+.can{
+    width: 87%;
+    height: 200vh;
+    /* background-color: rebeccapurple; */
+    margin: auto;
+    display: flex;
+}
+.can1{
+    width: 25%;
+    height: 270vh;
+    background-color: rgb(20, 20, 20);
+  
+}
+.user{
+    font-size: 60px;
+    text-align: center;
+    padding: 12%;
+}
+.pol{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(27, 26, 26, 0.582);
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    padding-left: 8%;
+    align-items: center;
+    border-left: 10px solid green;
+    margin-bottom: 1%;
+}
+.pol .fa-solid{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.pol p{
+    font-size: 22px;
+    padding-top: 2%;
+    color: white;
+    font-weight: bold;
+}
+
+
+.poll{
+    height: 10vh;
+    width: 100%;
+    background-color:  rgba(27, 26, 26, 0.582);
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    padding-left: 8%;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.poll .fa-solid{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.poll p{
+    font-size: 22px;
+    padding-top: 2%;
+    color: gray;
+    font-weight: bold;
+}
+.poll:hover{
+    border-left: 10px solid green;
+}
+
+.can2{
+    width: 75%;
+    height: 270vh;
+    padding: 3%;
+    line-height: 15vh;
+    background-color: rgb(255, 255, 255);
+}
+.can2 h1{
+    color: black;
+    font-size: 70px;
+    font-weight: bolder;
+}
+.can2 h2{
+    color: black;
+    padding-top: 6%;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.cakid{
+    width: 80%;
+    height: 10vh;
+    /* margin: auto; */
+    /* background-color: violet; */
+    display: flex;
+    /* gap: 40%; */
+    justify-content: space-between;
+}
+.cakid p{
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+}
+.cakid .btn{
+    padding: 35px 65px;
+    margin-top: 3%;
+    /* background-color: wheat; */
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.cakid .btn:hover{
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+.con{
+    width: 100%;
+    margin-top: 7vh;
+    height: 27vh;
+    border-top-right-radius: 20px;
+    padding: 3%;
+    border-top-left-radius: 20px;
+    background-color: rgb(179,179,179);
+    box-shadow: 2px 2px 2px 2px black;
+}
+.con h2{
+    font-size: 43px;
+    color: black;
+}
+.com{
+    width: 100%;
+    margin-top: 0vh;
+    height: 30vh;
+    border-bottom-right-radius: 20px;
+    padding: 3%;
+    box-shadow: 2px 2px 2px 2px black;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.com p{
+    font-size: 23px;
+    margin-top: -4%;
+}
+.com h2{
+    margin-top: -5%;
+}
+.caski{
+    width: 25%;
+    /* background-color: darkblue; */
+    height: 9vh;
+    padding-top: 3%;
+}
+@media (max-width:1000px) {
+    
+.can2{
+    width: 100%;}
+    
+}
+.btn1{
+    /* padding: -2% 15px; */
+    height: inherit;
+    margin-top: 3%;
+    width: 80%;
+    /* background-color: wheat; */
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.btn1:hover{
+    transform: scale(1.1);
+}
+.sigh:hover{
+    transform: scale(1.1);
+}
+.pan{
+    width: 100%;
+    height: 30vh;
+    /* background-color: hotpink; */
+    margin-top: 5%;
+    line-height: 40px;
+}
+.pan a{
+    color: black;
+}
+.pan a:hover{
+    color: rgb(34, 184, 34);
+}
+.pan p{
+    font-size: 22px;
+    padding-top: 2%;
+    color: black;
+}
+.pan .buttonn{
+    padding: 25px 20px;
+    font-size: 22px;
+    width: 87%;
+    margin-top: 2%;
+    color: black;
+    background-color: transparent;
+    text-align: left; 
+}
+.sigh{
+    height: 7vh;
+    margin-top: 3%;
+    width: 25%;
+    /* background-color: wheat; */
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+
+
+.container-2{
+    width: 100%;
+    height: 45vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.spott{
+    width: 15%;
+    height: inherit;
+    /* background-color: darkblue; */
+    margin-top: 8%;
+}
+.spott img{
+    width: 100%;
+    height: 8vh;
+}
+    
+.footer{
+    width: 70%;
+    height: 40vh;
+    /* background-color: gold; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.company{
+    width: 18%;
+    height: 30vh;
+    /* background-color: blue; */
+    line-height: 3rem;
+    color: #fff;    
+}
+
+.company b{
+    color: gray;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.company a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 5vh;
+}
+.company a:hover{
+    color: green;
+}
+
+.community{
+    width: 20%;
+    height: 30vh;
+    /* background-color: peru; */
+    line-height: 3rem;
+    color: #fff; 
+}
+
+.community b{
+    color: gray;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.community a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    line-height: 5vh;
+    font-weight: 300;
+}
+.community a:hover{
+    color: green;
+}
+.useful{
+    width: 20%;
+    height: 30vh;
+    /* background-color: darkred; */
+    line-height: 3rem;
+}
+
+.useful b{
+    color: gray;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.useful a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    line-height: 5vh;
+    font-weight: 300;
+}
+.useful a:hover{
+    color: green;
+}
+.media{
+    width: 18%;
+    height: 30vh;
+    /* background-color: aqua; */
+}
+
+.media-btn{
+    width: 100%;
+    height: 30vh;
+    /* background-color: aquamarine; */
+    gap: 5%;
+    margin-top: 0%;
+    margin-left: -6%;
+}
+
+.mbtn{
+    border: none;
+    border-radius: 100%;
+    font-size: 35px;
+    padding: 4% 7%;
+    background-color: rgba(128, 128, 128, 0.281);
+}
+
+
+.leg{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    /* margin-bottom: 5%; */
+}
+
+.leg1{
+    width: 40%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color:rebeccapurple ; */
+    align-items: center;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.lp{
+    color: grey;
+    font-size: 19px;
+}
+
+.lp:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.spot-AB{
+    width: 20%;
+    height: 8vh;
+    padding-left: 4%;
+    margin-top: 6%;
+    /* background-color: violet; */
+}
+.spot-AB p{
+    font-size: 18px;
+    color: gray;
+    padding-left: 12%;
+}
+
+.ab{
+    padding: .2% 2%;
+    border: 1px solid gainsboro;
+    border-radius: 100%;
+    background-color: transparent;
+    color: grey;
+    /* margin-top: 5%; */
+}
+
+.spot-AB span{
+    color: grey;
+}
+
+@media (max-width:980px) {
+    .can1{display: none;}
+    .can2{width: inherit; height: max-content;}
+    .caski{display: none;}
+    .pan{display: none;}
+    .all{height: 300vh;}
+    .spot1{width: 40%; display: flex; align-items: center;}
+
+}

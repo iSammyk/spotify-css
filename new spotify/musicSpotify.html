@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Sam</title>
+    <script src="https://kit.fontawesome.com/8ac85c2cfe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="muspotify.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <main class="d-flex">
+    <div class="container w-25 bg-dark sticky-top" style="height: 88vh;">
+        <div class="container w-90 card my-2 gap-3 p-3 px-3 text-light"style="height: 20%;" id="gag">
+            <p class="fs-6"><i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> &nbsp; &nbsp;Home</p>
+            <p class="fs-6"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i> &nbsp; &nbsp; Search</p>
+        </div>
+        <div class=" w-90 card mt-2" style="height: 75%;" id="gags">
+       <div class="text-light p-2" style="height: 7vh;" id="stick">
+            <p class="fs-5"><i class="fa-solid fa-music fa-lg" style="color: #6d93d4;"></i> &nbsp; My Playlist</p>
+        </div>
+
+        <button class="buto" onclick="song1()">
+            <div class="d-flex">
+                <img class="mt-2" src="Joeboy-Alcohol-Art.jpg" width="65" height="60" alt="">
+                <div class="mx-3 mt-2">
+                    <b class="text-light" style="display: flex; align-self: baseline;">Joeboy</b>
+                    <p class="text-secondary" style="display: flex; align-self: baseline;">Alcohol</p>
+        </div>
+          </div>
+        </button>
+        <button class="buto" onclick="song2()">
+            <div class="d-flex">
+                <img class="mt-2" src="timeless.jpg" width="65" height="60" alt="">
+                <div class="mx-3 mt-2">
+                    <b class="text-light" style="display: flex; align-self: baseline;">Davido ft Cavemen & Angelino</b>
+                    <p class="text-secondary" style="display: flex; align-self: baseline;">Na Money</p>
+        </div>
+          </div>
+        </button>
+        <button class="buto" onclick="song3()">
+            <div class="d-flex">
+                <img class="mt-2" src="Olamide-Unruly-Album.webp" width="65" height="60" alt="">
+                <div class="mx-3 mt-2">
+                    <b class="text-light" style="display: flex; align-self: baseline;">Olamide ft Rema</b>
+                    <p class="text-secondary" style="display: flex; align-self: baseline;">Mukulu</p>
+        </div>
+          </div>
+        </button>
+        <button class="buto" onclick="song4()">
+            <div class="d-flex">
+                <img class="mt-2" src="screengrab-from-amapiano-by-asake-and-olamide.webp" width="65" height="60" alt="">
+                <div class="mx-3 mt-2">
+                    <b class="text-light" style="display: flex; align-self: baseline;">Aaake ft Olamide</b>
+                    <p class="text-secondary" style="display: flex; align-self: baseline;">Amapiano</p>
+        </div>
+          </div>
+        </button>
+        <button class="buto" onclick="song9()">
+            <div class="d-flex">
+                <img class="mt-2" src="af4.png" width="65" height="60" alt="">
+                <div class="mx-3 mt-2">
+                    <b class="text-light" style="display: flex; align-self: baseline;">Fireboy</b>
+                    <p class="text-secondary" style="display: flex; align-self: baseline;">Jealous</p>
+        </div>
+          </div>
+        </button>
+
+        <button class="buto" onclick="song5()">
+            <div class="d-flex">
+                <img class="mt-2" src="Joeboy_(new).jpg" width="65" height="60" alt="">
+                <div class="mx-3 mt-2">
+                    <b class="text-light" style="display: flex; align-self: baseline;">Joeboy</b>
+                    <p class="text-secondary" style="display: flex; align-self: baseline;">Duffel-Bag</p>
+        </div>
+          </div>
+        </button>
+
+        <button class="buto" onclick="song8()">
+            <div class="d-flex">
+                <img class="mt-2" src="af5.webp" width="65" height="60" alt="">
+                <div class="mx-3 mt-2">
+                    <b class="text-light" style="display: flex; align-self: baseline;">Wizkid</b>
+                    <p class="text-secondary" style="display: flex; align-self: baseline;">Bad Energy</p>
+        </div>
+          </div>
+        </button>    
+
+    </button>
+    <button class="buto" onclick="song6()">
+        <div class="d-flex">
+            <img class="mt-2" src="af7.webp" width="65" height="60" alt="">
+            <div class="mx-3 mt-2">
+                <b class="text-light" style="display: flex; align-self: baseline;">Davido</b>
+                <p class="text-secondary" style="display: flex; align-self: baseline;">Champion sound</p>
+    </div>
+      </div>
+    </button>  
+    
+</button>
+<button class="buto" onclick="song7()">
+    <div class="d-flex">
+        <img class="mt-2" src="af8.jpg" width="65" height="60" alt="">
+        <div class="mx-3 mt-2">
+            <b class="text-light" style="display: flex; align-self: baseline;">Rema</b>
+            <p class="text-secondary" style="display: flex; align-self: baseline;">Bad Commando</p>
+</div>
+  </div>
+</button>      
+    </div>
+    </div>
+    <div id="spot" class="container container-fluid w-75 bg-danger" style="height: 88vh;">
+
+    </div>
+    </main>
+    <div class="bg-secondary d-flex " style="height: 12vh;">
+     <div class="container w-25 bg-secondary h-100">
+        <div class="d-flex text-center">
+            <img id="dwnimg" class="mt-2" src="af8.jpg" width="70" height="79" alt="" style="border-radius: 9px;">
+            <div class="mx-3 mt-4" style="width: 43%;">
+                <!-- <audio id="musical" src=""></audio> -->
+                <b id="dname" class="text-light" style="display: flex; align-self: baseline;">Rema</b>
+                <p id="dtitle" class="text-dark" style="display: flex; align-self: baseline;">Bad Commando</p>
+    </div>    
+    <div class="mt-4" style="height: max-content ;  width: 30%;">
+        <span class="mt-4 mx-3"><i class="fa-regular fa-heart fa-xl" style="color: #1b1c1d;"></i></span> <br>
+        <span class="mt-4 mx-3"><i class="fa-solid fa-ban fa-xl" style="color: #1b1c1d;"></i></span>
+    </div>
+      </div>
+
+     </div>   
+     <div class="container w-50  h-100">
+        <div class="container container-fluid d-flex w-50 text-center justify-content-around my-3">
+            <audio id="musical" src=""></audio>
+            <button class="btn w-25" onclick="shuff()" id="shuffle"><i class="fa-solid fa-shuffle fa-2xl"></i></button>        
+            <button class="btn w-25" onclick="prev()" id="prevbtn"><i class="fa-solid fa-circle-chevron-left fa-2xl"></i></button>
+            <button class="btn w-25" onclick="pause()" id="pausebtn"><i class="fa-solid fa-circle-pause fa-2xl"></i></button>
+            <button class="btn w-25" onclick="play()" id="playbtn"><i class="fa-solid fa-circle-play fa-2xl"></i></button>
+            <button class="btn w-25" onclick="next()" id="nextbtn"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></button>
+
+            <button class="btn w-25" onclick="next()" id="nextbtn"><i class="fa-solid fa-repeat fa-2xl"></i></button>
+        </div>
+        <!-- <div class="container bg-danger h-25">
+            <span>00:00</span>
+            <input type="range" class="w-75" value="0"> 
+            <span class="">∞∞∞</span>
+        </div> -->
+
+        <div class="container d-flex justify-content-around text-light">
+            <audio id="musical" src=""></audio>
+            <span id="currentTime">00:00</span>
+            <input type="range" class="progress-range w-75" id="seekSlider" step="1" value="0">
+            <span id="totalDuration">0:00</span>
+        </div>
+
+     </div>   
+     <div class="container w-25 h-100"></div>   
+
+    </div>
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script>
+    let downimg = document.getElementById("dwnimg")
+    let musical = document.getElementById("musical");
+        let prevbtn = document.getElementById("prevbtn");
+        let pausebtn = document.getElementById("pausebtn");
+        let playbtn = document.getElementById("playbtn");
+        let nextbtn = document.getElementById("nextbtn");
+        let imgred = document.getElementById("imgred");
+        let showtittle = document.getElementById("showtittle")
+        let dtitle = document.getElementById("dname")
+        let dname = document.getElementById("dtitle")
+        let seekSlider = document.getElementById("seekSlider");
+        let currentTimeSpan = document.getElementById("currentTime");
+        let totalDurationSpan = document.getElementById("totalDuration");
+
+        
+        let myplaylist = [
+        {
+                artist:"Rema",
+                img: "af8.jpg",
+                song: "Rema-Bad-Commando.mp3",
+                title: "Bad Commando"
+            },
+
+            {
+                artist: "Asake-Ft-Olamide",
+                img: "screengrab-from-amapiano-by-asake-and-olamide.webp",
+                song: "Asake-Ft-Olamide-Amapiano-New-Song-(TrendyBeatz.com).mp3",
+                title: "Amapiano"
+            },
+            {
+                artist: "Olamide Ft-Rema",
+                img: "Olamide-Unruly-Album.webp",
+                song: "Olamide-Ft-Rema-Mukulu-(TrendyBeatz.com).mp3",
+                title: "Mukulu"
+            },
+
+            {
+                artist: "Davido ft Cavemen",
+                img: "timeless.jpg",
+                song: "Davido-Ft-The-Cavemen-and-Angelique-Kidjo-Na-Money-(TrendyBeatz.com) (1).mp3",
+                title: "NA-money"
+            },
+            {
+                artist: "Joeboy",
+                img: "duufelbag.jpg",
+                song: "Joeboy-Duffel-Bag-(TrendyBeatz.com).mp3",
+                title: "Duffel-Bag"
+            },
+            {
+                artist: "Focalistic ft Davido",
+                img: "chop.jpeg",
+                song: "Focalistic-Ft-Davido-Champion-Sound-(TrendyBeatz.com).mp3",
+                title: "Champion Sound"
+            },
+            {
+                artist: "Joeboy",
+                img: "joeboy-Alcohol-Art.jpg",
+                song: "Joeboy-Alcohol-(TrendyBeatz.com).mp3",
+                title: "Alcohol"
+         },
+         {
+                artist: "Fireboy",
+                img: "fire.jpg",
+                song: "Fireboy-DML-Jealous-[TrendyBeatz.com].mp3",
+                title: "Jealous"
+         },
+         {
+                artist: "Skepta Ft Wizkid",
+                img: "Wizkid-2-Sugar-Ft-Ayra-Starr.jpg",
+                song: "  Skepta-Ft-WizKid-Energy-Stay-Far-Away-(TrendyBeatz.com).mp3",
+                title: "Bad Energy"
+         }
+        ];
+        
+        pausebtn.style.display ="none";
+        currentMusicindex = 0;
+            
+        function uptitle(){
+            dtitle.innerHTML = myplaylist[currentMusicindex].title;
+        }
+
+
+        function updateImage() {
+            downimg.src = myplaylist[currentMusicindex].img;
+        }
+        function updateArtist(){
+            dname.innerHTML = myplaylist[currentMusicindex].artist
+        }
+        
+        function play(){
+            musical.src = myplaylist[currentMusicindex].song;
+            musical.play();
+            playbtn.style.display = "none";
+            pausebtn.style.display = "block";
+            updateImage();
+            uptitle();
+            updateArtist();
+        }
+        
+        function pause(){
+            musical.pause();
+            playbtn.style.display = "block";
+            pausebtn.style.display = "none";
+        }
+        
+        function next(){
+            currentMusicindex = (currentMusicindex + 1) % myplaylist.length;
+            play();
+        }
+        
+        function prev(){
+            currentMusicindex = (currentMusicindex - 1 + myplaylist.length ) % myplaylist.length;
+            play();
+        }
+
+ 
+        function updateSeekBar() {
+    seekSlider.value = musical.currentTime;
+    currentTimeSpan.textContent = formatTime(musical.currentTime);
+}
+
+function updateTotalDuration() {
+    if (!isNaN(musical.duration) && isFinite(musical.duration)) {
+        totalDurationSpan.textContent = formatTime(musical.duration);
+        seekSlider.max = musical.duration;
+    } else {
+        totalDurationSpan.textContent = '∞∞∞';
+    }
+}
+
+
+function formatTime(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+seekSlider.addEventListener("input", () => {
+    musical.currentTime = seekSlider.value;
+    currentTimeSpan.textContent = formatTime(musical.currentTime);
+});
+
+musical.addEventListener("timeupdate", updateSeekBar);
+musical.addEventListener("canplay", updateTotalDuration); // Update total duration when audio is ready
+
+// Trigger an initial update
+updateTotalDuration();
+
+        function song1(){
+            currentMusicindex = 6;
+            play()
+        }
+
+        function song2(){
+            currentMusicindex = 3;
+            play()
+        }
+        function song3(){
+            currentMusicindex = 2;
+            play()
+        }
+        function song4(){
+            currentMusicindex = 1;
+            play()
+        }
+        function song5(){
+            currentMusicindex = 4;
+            play()
+        }
+        function song6(){
+            currentMusicindex = 5;
+            play()
+        }
+        function song7(){
+            currentMusicindex = 0;
+            play()
+        }
+        function song8(){
+            currentMusicindex = 8;
+            play()
+        }
+        function song9(){
+            currentMusicindex = 7;
+            play()
+        }
+</script>

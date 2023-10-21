@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    /* background-color: pink; */
+    width: 450px;
+    height: 1300px;
+    margin: auto;
+    /* padding: 40px 0; */
+}
+.logo{
+    width: inherit;
+    height: 40px;
+    /* background-color: green; */
+    /* margin:  auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.logo img{
+    width: 140px;
+}
+.txt{
+    width: inherit;
+    height: 36px;
+    /* background-color: maroon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+.txt h2{
+font-size: 28px;
+letter-spacing: -1.28px;
+font-weight: 700;
+font-family: sans-serif;
+}
+.face{
+    width: inherit;
+    height: 48px;
+    margin-bottom: 20px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face a{
+    height: inherit;
+    text-decoration: none;
+    color: #ffffff;
+}
+.face span{
+    width: 390px;
+    height: inherit;
+    margin: auto;
+    background-color: #405a93;
+    border: 1px solid #405a93;
+    border-radius: 30px;
+}
+.face span:hover{
+    transform: scale(1.04);
+}
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.facebook h5{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.goo{
+    width: inherit;
+    height: 48px;
+    margin-bottom: 20px;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goo a{
+    height: inherit;
+    text-decoration: none;
+    color: black;
+    /* background-color: #ffffff; */
+    width: 390px;
+    border-radius: 30px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goo a:hover{
+    transform: scale(1.04);
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.google h5{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.or{
+    width: inherit;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    /* background-color: red; */
+}
+.or img{
+    width: 380px;
+}
+.email{
+    width: inherit;
+    height: 105px;
+    /* background-color: aquamarine; */
+}
+.email p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.email input{
+    width: 430px;
+    height: 50px;
+    margin: 8px 0;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.email a{
+    color: #117a37;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.password{
+    width: inherit;
+    height: 90px;
+    /* background-color: aquamarine; */
+    margin: 25px 0 0 0;
+}
+.password p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.input-box{
+    background-color: white;
+    width: 430px;
+    height: 50px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 8px 0 0 0;
+    border-radius: 5px;
+}
+.input-box input{
+    width: 425px;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.input-box img{
+    width: 35px;
+    cursor: pointer;
+}
+.profile{
+    width: inherit;
+    height: 105px;
+    margin: 20px 0;
+    /* background-color: magenta; */
+}
+.profile p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.profile input{
+    width: 430px;
+    height: 50px;
+    margin: 8px 0;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.profile h6{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.dob{
+    width: 450px;
+    height: 100px;
+    /* background-color: cadetblue; */
+}
+.dob p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 8px;
+}
+.dob-txt{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 450px;
+}
+.dob-txt h6{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.month{
+    margin-left: 90px;
+}
+.year{
+    margin-left: 185px;
+}
+.dob-box{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+#dd{
+    width: 70px;
+    height: 48px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+#month{
+    width: 200px;
+    height: 48px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+#yyyy{
+    width: 95px;
+    height: 48px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.radio-txt{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 8px;
+}
+.radio {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+.radio input{
+    width: 15px;
+    height: 15px;
+}
+input[type="radio"]{
+    accent-color: green;
+}
+input[type="checkbox"]{
+    accent-color: green;
+}
+.check{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+.check input{
+    height: 15px;
+    width: 15px;
+}
+.check label{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.check1{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 20px;
+}
+.check1 input{
+    height: 15px;
+    width: 15px;
+}
+.check1 label{
+    padding-top: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.h6{
+    font-size: 9.5px;
+    font-family: 400;
+    font-family: sans-serif;
+    margin: 20px 20px 10px 20px;
+}
+.h6 a{
+    color: #1ed760;
+}
+.button{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button{
+    background-color: #1ed760;
+    padding: 20px 40px;
+    border-radius: 30px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.button-a{
+    text-decoration: none;
+    color: black;
+}
+.label{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.label{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.label a{
+    color: #1ed760;
+}

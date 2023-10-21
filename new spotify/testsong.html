@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8ac85c2cfe.js" crossorigin="anonymous"></script>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.playlist li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.song-title {
+    margin-left: 10px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.song-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+    </style>
+</head>
+<body>
+   <main class="container">
+        <div class="header">
+            <h1>My Music Player</h1>
+        </div>
+        <div class="music-container">
+            <ul id="playlist" class="playlist">
+                <li data-src="Joeboy-Alcohol-(TrendyBeatz.com).mp3" data-img="office.webp">
+                    <span class="song-title">Alcohol</span>
+                </li>
+                <li data-src="Asake-Ft-Olamide-Amapiano-New-Song-(TrendyBeatz.com).mp3" data-img="unk.jpg">
+                    <span class="song-title">Amapiano New Song</span>
+                </li>
+                <li data-src="Olamide-Ft-Rema-Mukulu-(TrendyBeatz.com).mp3" data-img="unko.jpg">
+                    <span class="song-title">Mukulu</span>
+                </li>
+            </ul>
+            <div class="controls">
+                <audio id="musical" src=""></audio>
+                <div class="song-info">
+                    <img id="imgred" src="Olamide-Unruly-Album.webp" alt="Album Art">
+                    <h2 id="songTitle">Song Title</h2>
+                </div>
+                <div class="buttons">
+                    <button class="btn" onclick="prev()"><i class="fa-solid fa-circle-chevron-left fa-2xl"></i></button>
+                    <button class="btn" onclick="pause()"><i class="fa-solid fa-circle-pause fa-2xl"></i></button>
+                    <button class="btn" onclick="play()"><i class="fa-solid fa-circle-play fa-2xl"></i></button>
+                    <button class="btn" onclick="next()"><i class="fa-solid fa-circle-chevron-right fa-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+   </main>
+<script>
+
+const musical = document.getElementById("musical");
+const imgred = document.getElementById("imgred");
+const songTitle = document.getElementById("songTitle");
+const playlistItems = document.querySelectorAll(".playlist li");
+
+const myplaylist = [
+    {
+        src: "Joeboy-Alcohol-(TrendyBeatz.com).mp3",
+        img: "timeless.jpg",
+        title: "Alcohol"
+    },
+    {
+        src: "Asake-Ft-Olamide-Amapiano-New-Song-(TrendyBeatz.com).mp3",
+        img: "timeless.jpg",
+        title: "Amapiano New Song"
+    },
+    {
+        src: "Olamide-Ft-Rema-Mukulu-(TrendyBeatz.com).mp3",
+        img: "timeless.jpg",
+        title: "Mukulu"
+    }
+];
+
+let currentMusicindex = 0;
+
+function play() {
+    musical.src = myplaylist[currentMusicindex].src;
+    musical.play();
+    updateUI();
+}
+
+function pause() {
+    musical.pause();
+    updateUI();
+}
+
+function next() {
+    currentMusicindex = (currentMusicindex + 1) % myplaylist.length;
+    play();
+}
+
+function prev() {
+    currentMusicindex = (currentMusicindex - 1 + myplaylist.length) % myplaylist.length;
+    play();
+}
+
+function updateUI() {
+    imgred.src = myplaylist[currentMusicindex].img;
+    songTitle.textContent = myplaylist[currentMusicindex].title;
+}
+
+playlistItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        currentMusicindex = index;
+        play();
+    });
+});
+
+</script>
+</body>
+</html>
